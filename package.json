@@ -12,5 +12,15 @@
     "body-parser": "^1.17.1",
     "cors": "^2.8.3",
     "express": "^4.15.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/da7oom1988/time-stamp.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/da7oom1988/time-stamp/issues"
+  },
+  "homepage": "https://github.com/da7oom1988/time-stamp#readme"
 }
