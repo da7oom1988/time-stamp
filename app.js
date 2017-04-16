@@ -25,7 +25,10 @@ app.get('/:input',function(req,res){
    var result = dateChange(req.params.input);
    res.json(result);
 });
-
+app.get('/',function(req,res){
+   var result = dateChange(req.params.input);
+   res.end("Enter the date in the url");
+});
 
 app.listen(3000);
 console.log("working");
