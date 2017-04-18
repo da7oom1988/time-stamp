@@ -5,6 +5,9 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json());
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
 
 function dateChange(d) {
     var dateForm = {month:"long", day:"numeric" , year: "numeric"};
@@ -27,8 +30,7 @@ app.get('/:input',function(req,res){
    res.json(result);
 });
 app.get('/',function(req,res){
-   var result = dateChange(req.params.input);
-   res.end("Enter the date in the url");
+  res.render("index");
 });
 
 app.listen(app.get('port'), function() {
